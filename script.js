@@ -1,10 +1,11 @@
-// MOBILE MENU
-const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".menu");
+// MENU TOGGLE
+const menuBtn = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
 
 menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("show");
+  sideMenu.classList.toggle("show");
 });
+
 
 // TESTIMONIAL SLIDER
 let slides = document.querySelectorAll(".slide");
@@ -24,3 +25,18 @@ setInterval(() => {
   index = (index + 1) % slides.length;
   showSlide(index);
 }, 3000);
+
+const closeBtn = document.getElementById("closeBtn");
+
+closeBtn.addEventListener("click",()=>{
+    sideMenu.classList.remove("show");
+});
+
+const menuLinks=document.querySelectorAll(".side-menu a");
+
+menuLinks.forEach(link => {
+    link.addEventListener("click",()=>{
+        sideMenu.classList.remove("show");
+    });
+});
+
