@@ -5,34 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indegene</title>
     <link rel ="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 
 <body>
+    <script src="script.js"></script>
 
-    <header>
-        <div class=""container nav">
-        <h2 class="logo">Indegene</h2>
-        <ul>
-            <li> About </li>
-            <li>Products</li>
-            <li>Events</li>
-            <li>Blog</li>
-            <li>Contact</li>
-        </ul>
-    
+ <header class="header">
+  <div class="container nav">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="images/logo.png" alt="logo">
     </div>
-    </header>
 
-    <!--  Hero Section  -->
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
 
-    <section class="hero">
-        <div class="hero-txt">
-            <h1> Enterprise Marketing and Customer Experience</h1>
-            <p>Leverage data to drive personalization at scale</p>
-            <button>Get Started</button>
-        </div>
-    </section>
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <!-- MENU -->
+      <div class="menu-btn" id ="menu-btn">
+        MENU <i class="fas fa-bars"></i>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+<div class="side-menu" id ="sideMenu">
+    <ul>
+        <li><a href="#">Home </a></li>
+        <li><a href="#">About </a></li>
+        <li><a href="#">Products </a></li>
+        <li><a href="#">Events </a></li>
+        <li><a href="#">Calender </a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact </a></li>
+    </ul>
+</div>
+
+      <!-- MENU TEXT -->
+      <div class="menu-btn">
+        MENU ☰
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- TOP HERO TEXT -->
+  <div class="hero-top">
+    <h1>Enterprise Marketing and Customer Experience</h1>
+    <p>LEVERAGE DATA TO DRIVE PERSONALIZATION AT SCALE</p>
+
+    <div class="hero-buttons">
+      <button class="btn primary">The Global Transition</button>
+      <button class="btn light">Explore</button>
+    </div>
+  </div>
+
+  <!-- BOTTOM HERO  -->
+  <div class="hero-bottom">
+    <div class="hero-left">
+      <h3>THE DIGITAL SAVVY PHARMA MARKETER 2020</h3>
+      <p>"Must have tool for every pharma marketer"</p>
+      <button class="btn small">Download</button>
+    </div>
+
+    <div class="hero-right"></div>
+  </div>
+
+</section>
 
     <!--  COMPANY-->
 
@@ -78,10 +134,22 @@
 <section class="testimony">
   <div class="overlay-dark">
     <h2>INSPIRATIONAL TESTIMONY</h2>
-    <div class="testimony-cards">
-      <div class="dot active"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
+    <div class="slide active-slide">
+      <p>CEO - Responsible for company strategy</p>
+    </div>
+
+    <div class="slide">
+      <p>Executive VP - Handles operations</p>
+    </div>
+
+    <div class="slide">
+      <p>President - Leads initiatives</p>
+    </div>
+
+    <div class="dots">
+      <span class="dot active-dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </div>
 </section>
