@@ -56,3 +56,129 @@
   background: #c8a97e;
   color: white;
 }
+
+/* COMPANY */
+.company {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background: pink;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.company-card {
+  padding: 20px;
+}
+
+/* TESTIMONY */
+.testimony {
+  height: 300px;
+  background: url('images/road.jpg') center/cover;
+}
+
+.overlay-dark {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.active {
+  background: white;
+}
+
+/* EVENTS */
+.events {
+  padding: 50px 0;
+}
+
+.event-card {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.event-card img {
+  width: 200px;
+}
+
+.small {
+  padding: 6px 12px;
+  margin-top: 10px;
+}
+
+/* BLOG */
+.blog {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.blog-card img {
+  width: 100%;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .company-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none;
+  }
+}
